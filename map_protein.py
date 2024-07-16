@@ -31,7 +31,7 @@ for i in df_genes:
               )
   
 df_disease = pd.DataFrame(final_arr_short.neighbour_name.value_counts().reset_index().values, columns = ["names", "counts"])
-df_disease = df_disease.sort_index(axis = 0, ascending = True)
+df_disease = df_disease.sort_index(axis = 0, ascending=True)
 df_disease = df_disease[df_disease.name != 'na']
 for index, row in df_disease.iterrovs():
   nodes.append(Node(id = row['name'],
