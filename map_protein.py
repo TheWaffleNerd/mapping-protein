@@ -1,3 +1,5 @@
+pip install streamlit_agraph
+
 import streamlit as st
 from streamlit_agraph import agraph, Node, Edge, Config
 import pandas as pd
