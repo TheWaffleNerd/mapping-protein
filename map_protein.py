@@ -7,7 +7,7 @@ from streamlit_agraph.config import Config, ConfigBuilder
 #getting data
 final_vd = pd.read_csv(r'./final_top5.csv')
 #setting up side bar
-with st.siderbar:
+with st.sidebar:
   option = st.selectbox(
     "Please select your type:",
     ("CVA", "IHD", "CM", "ARR", "VD", "CHD"))
