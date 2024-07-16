@@ -73,7 +73,8 @@ config.save("config.json")
 #3. Simple reload from json file (you can bump the builder at this point).
 config = Config(from_json = "config.json")
 
-return_value = agraph(nodes = nodes,
-                      edges = edges,
-                      config = config)
+return_value = agraph(nodes=nodes,
+                      edges=edges,
+                      config=config)
+
                   
