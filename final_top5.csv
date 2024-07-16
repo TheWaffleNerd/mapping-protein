@@ -1,0 +1,63 @@
+Protein,Gene,neighbour_name,node_type,Condition
+P0DP23,CALM1_HUMAN,melanoma,Disease,ARR
+P0DP23,CALM1_HUMAN,adult-onset severe asthma,Disease,ARR
+P17302,CXA1_HUMAN,brain glioma,Disease,ARR
+P17302,CXA1_HUMAN,melanoma,Disease,ARR
+P17302,CXA1_HUMAN,Alzheimer's disease,Disease,ARR
+P17302,CXA1_HUMAN,head and neck squamous cell carcinoma,Disease,ARR
+P02771,FETA_HUMAN,hepatocellular carcinoma,Disease,CHD
+P02771,FETA_HUMAN,liver cancer,Disease,CHD
+P78504,JAG1_HUMAN,non-alcoholic fatty liver,Disease,CHD
+P78504,JAG1_HUMAN,prostate cancer,Disease,CHD
+P78504,JAG1_HUMAN,melanoma,Disease,CHD
+P35555,FBN1_HUMAN,melanoma,Disease,CHD
+P35555,FBN1_HUMAN,pancreatic ductal adenocarcinoma,Disease,CHD
+P41181,AQP2_HUMAN,chronic kidney disease,Disease,CM
+P41181,AQP2_HUMAN,kidney cancer,Disease,CM
+Q92629,SGCD_HUMAN,melanoma,Disease,CM
+P08473,NEP_HUMAN,COVID-19,Disease,CM
+P08473,NEP_HUMAN,acute lymphoblastic leukemia,Disease,CM
+P08473,NEP_HUMAN,hepatocellular carcinoma,Disease,CM
+P08473,NEP_HUMAN,lung non-small cell carcinoma,Disease,CM
+P08473,NEP_HUMAN,melanoma,Disease,CM
+P08473,NEP_HUMAN,breast cancer,Disease,CM
+P08473,NEP_HUMAN,colorectal cancer,Disease,CM
+P11137,MTAP2_HUMAN,oligodendroglioma,Disease,CVA
+P14136,GFAP_HUMAN,glioblastoma,Disease,CVA
+P14136,GFAP_HUMAN,high grade glioma,Disease,CVA
+P14136,GFAP_HUMAN,cancer,Disease,CVA
+P14136,GFAP_HUMAN,malignant astrocytoma,Disease,CVA
+P14136,GFAP_HUMAN,brain glioma,Disease,CVA
+P14136,GFAP_HUMAN,oligodendroglioma,Disease,CVA
+Q86UF1,TSN33_HUMAN,oral squamous cell carcinoma,Disease,CVA
+P06858,LIPL_HUMAN,oligodendroglioma,Disease,IHD
+P02647,APOA1_HUMAN,hepatocellular carcinoma,Disease,IHD
+P02647,APOA1_HUMAN,kidney cancer,Disease,IHD
+Q9H244,P2Y12_HUMAN,glioblastoma,Disease,IHD
+Q9H244,P2Y12_HUMAN,nervous system disease,Disease,IHD
+Q9H244,P2Y12_HUMAN,brain cancer,Disease,IHD
+Q9H244,P2Y12_HUMAN,hydrocephalus,Disease,IHD
+Q9H244,P2Y12_HUMAN,melanoma,Disease,IHD
+Q9H244,P2Y12_HUMAN,brain glioma,Disease,IHD
+P15502,ELN_HUMAN,melanoma,Disease,VD
+P09493,TPM1_HUMAN,head and neck squamous cell carcinoma,Disease,VD
+P09493,TPM1_HUMAN,melanoma,Disease,VD
+P09493,TPM1_HUMAN,pancreatic ductal adenocarcinoma,Disease,VD
+P09493,TPM1_HUMAN,colorectal cancer,Disease,VD
+P09493,TPM1_HUMAN,hepatocellular carcinoma,Disease,VD
+P09493,TPM1_HUMAN,oral squamous cell carcinoma,Disease,VD
+P78347,GTF2I_HUMAN,liver cancer,Disease,VD
+O00151,PDLI1_HUMAN,renal cell carcinoma,Disease,VD
+O00151,PDLI1_HUMAN,melanoma,Disease,VD
+P36382,,na,Disease,ARR
+Q92736,,na,Disease,ARR
+O14958,,na,Disease,ARR
+P01241,,na,Disease,CHD
+P35556,,na,Disease,CHD
+B4DM00,,na,Disease,CVA
+P20783,,na,Disease,CVA
+Q9UIG0,,na,Disease,VD
+P08473,,na,Disease,CM
+P11532,,na,Disease,CM
+P11597,,na,Disease,IHD
+P11150,,na,Disease,IHD
