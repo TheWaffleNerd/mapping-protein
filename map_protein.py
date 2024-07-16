@@ -33,7 +33,7 @@ for i in df_genes:
 df_disease = pd.DataFrame(final_arr_short.neighbour_name.value_counts().reset_index().values, columns=["name", "count"])
 df_disease = df_disease.sort_index(axis = 0, ascending=True)
 df_disease = df_disease[df_disease.name != 'na']
-for index, row in df_disease.iterrovs():
+for index, row in df_disease.iterrows():
   nodes.append(Node(id = row['name'],
                     label = row['name'],
                     size = 10 * row['count'],
@@ -51,13 +51,13 @@ for k in df_condition:
               )
 df_connections = final_arr_short.filter(items = ['Protein', 'neighbour_name']).drop_duplicates()
 df_connections = df_connections[df_connections.neightbour_name != 'na']
-for index, row in df_connections.iterrovs():
+for index, row in df_connections.iterrows():
   nodes.append(Edge(source = row['Protein'],
                         label = '--',
                         target = row['neighbour_name'])
               )
 df_mconnections = final_arr_short.filter(items=['Protein', 'Condition'].drop_duplicates())
-for index, row in df_mconnections.iterrovs():
+for index, row in df_mconnections.iterrows():
   edges.append(Edge(source = row['Condition'],
                     label = '--',
                     target = row['Protein'])
