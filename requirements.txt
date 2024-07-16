@@ -1,2 +1,3 @@
 streamlit
-pip install streamlit_agraph
+streamlit_agraph
+pandas
