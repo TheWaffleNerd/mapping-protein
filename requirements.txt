@@ -1,3 +1,2 @@
 streamlit
-pip install --upgrade pip
-pip install streamlit_agraph
+pip install streamlit-agraph
