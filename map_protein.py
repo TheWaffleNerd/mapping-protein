@@ -14,7 +14,7 @@ with st.sidebar:
         'Please select your category:',
         type_n)
 
-if option:
+if category:
     with st.sidebar:
         option = st.selectbox(
         'Please select your Type:',
