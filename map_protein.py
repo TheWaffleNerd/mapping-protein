@@ -24,7 +24,7 @@ with st.sidebar:
 if category == 'Disease':
         df_category = pd.DataFrame({
             'Conditions': ['CVA','IHD','CM','ARR','VD','CHD'],
-            'Count': final_vd.Condition.value_counts().reset_index().values, columns=["name", "count"]
+            'Count': final_vd.Condition.value_counts().reset_index().values
         })
         st.bar_chart(df_category)
 
