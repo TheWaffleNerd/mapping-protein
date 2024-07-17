@@ -9,7 +9,7 @@ final_vd = pd.read_csv(r'./final_top51.csv')
 #setting sidebar
 with st.sidebar:
     category = st.selectbox(
-        "Please select your category:',
+        'Please select your category:',
         ('Disease', 'Co Morbidity'))
 
     if category == 'Disease':
