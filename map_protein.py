@@ -22,8 +22,6 @@ with st.sidebar:
         ('Please select your Type:', 'Heart Failure','Liver Dysfunction','Lung Dysfunction','Cancer','Liver Fibrosis','Kidney Dysfunction'))
 
 if category == 'Disease':
-    categories = {'CVA','IHD','CM','ARR','VD','CHD'}
-    for i in categories:
         final_cat_short = final_vd[final_vd.Condition == i]
         df_category = pd.DataFrame(final_vd.Condition.value_counts().reset_index().values, columns=["name", "count"])
         st.bar_chart(df_category)
