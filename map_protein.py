@@ -8,7 +8,6 @@ from streamlit_agraph.config import Config, ConfigBuilder
 final_vd = pd.read_csv(r'./final_top51.csv')
 #setting sidebar
 type_n = final_vd['node_type'].unique()
-type_c = final_vd['Condition'].unique()
 with st.sidebar:
     category = st.selectbox(
         'Please select your category:',
@@ -17,6 +16,7 @@ with st.sidebar:
 if category:
     final_cat_short = final_vd[final_vd.node_type == category]
     st.bar_chart(pd.DataFrame(final_cat_short['Condition'].value_counts()))
+    type_c = final_cat_short['Condition'].unique()
     
     with st.sidebar:
         option = st.selectbox(
