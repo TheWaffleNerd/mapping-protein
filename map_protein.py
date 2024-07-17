@@ -21,6 +21,10 @@ with st.sidebar:
         'Please select your Type:',
         ('Heart Failure','Liver Dysfunction','Lung Dysfunction','Cancer','Liver Fibrosis','Kidney Dysfunction'))
 
+    example = st.selectbox(
+        'Please select yes or no:',
+        ('Yes', 'No'))
+
 #getting data for KG
 final_arr_short = final_vd[final_vd.Condition == option]
  
