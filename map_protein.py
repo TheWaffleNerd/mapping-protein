@@ -7,32 +7,19 @@ from streamlit_agraph.config import Config, ConfigBuilder
 #getting data
 final_vd = pd.read_csv(r'./final_top51.csv')
 #setting sidebar
+type_n = final_vd['node_type'].unique()
+type_c = final_vd['Condition'].unique()
 with st.sidebar:
     category = st.selectbox(
         'Please select your category:',
-        ('Disease', 'Co Morbidity'))
+        type_n)
 
-    if category == 'Disease':
+if option:
+    with st.sidebar:
         option = st.selectbox(
         'Please select your Type:',
-        ('Please select your Type:', 'CVA','IHD','CM','ARR','VD','CHD'))
-    elif category == 'Co Morbidity':
-        option = st.selectbox(
-        'Please select your Type:',
-        ('Please select your Type:', 'Heart Failure','Liver Dysfunction','Lung Dysfunction','Cancer','Liver Fibrosis','Kidney Dysfunction'))
-
-if category == 'Disease':
-        count = final_vd.Condition.value_counts()
-        df_category = pd.DataFrame({
-            'Conditions': ['CVA','IHD','CM','ARR','VD','CHD'],
-            'Count': count
-        })
-        st.bar_chart(df_category)
-
-if category == 'Co Morbidity':
-    df_category = {'Heart Failure','Liver Dysfunction','Lung Dysfunction','Cancer','Liver Fibrosis','Kidney Dysfunction'}
-
-if option != 'Please select your Type:':
+        type_c)
+    
     #getting data for KG
     final_arr_short = final_vd[final_vd.Condition == option]
      
