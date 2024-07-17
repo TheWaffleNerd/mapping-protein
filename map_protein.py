@@ -5,12 +5,22 @@ st.set_page_config(layout="wide")
 from streamlit_agraph.config import Config, ConfigBuilder
 
 #getting data
-final_vd = pd.read_csv(r'./final_top5.csv')
+final_vd = pd.read_csv(r'./final_top51.csv')
 #setting sidebar
 with st.sidebar:
-    option = st.selectbox(
-    'Please select your Type:',
-    ('CVA','IHD','CM','ARR','VD','CHD'))
+    category = st.selectbox(
+        "Please select your category:',
+        ('Disease', 'Co Morbidity'))
+
+    if category == 'Disease':
+        option = st.selectbox(
+        'Please select your Type:',
+        ('CVA','IHD','CM','ARR','VD','CHD'))
+    elif category == 'Co Morbidity':
+        option = st.selectbox(
+        'Please select your Type:',
+        ('Heart Failure','Liver Dysfunction','Lung Dysfunction','Cancer','Liver Fibrosis','Kidney Dysfunction'))
+
 #getting data for KG
 final_arr_short = final_vd[final_vd.Condition == option]
  
