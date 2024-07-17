@@ -32,7 +32,7 @@ if category:
      
     df_genes = dict()
      
-    st.title('Knowledge Graph')
+    st.title('Knowledge Graph for ' + option)
     df_genes=dict(enumerate(final_arr_short.Protein.unique()))
     for i in df_genes:
                 nodes.append( Node(id=df_genes[i],
