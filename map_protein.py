@@ -15,13 +15,13 @@ with st.sidebar:
         type_n)
 
 if category:
+    final_cat_short = final_vd[final_vd.node_type == category]
+    st.bar_chart(pd.DataFrame(final_cat_short['Condition'].value_counts()))
+    
     with st.sidebar:
         option = st.selectbox(
         'Please select your Type:',
         type_c)
-
-    final_cat_short = final_vd[final_vd.node_type == category]
-    st.bar_chart(pd.DataFrame(final_cat_short['Condition'].value_counts()))
     
     #getting data for KG
     final_arr_short = final_vd[final_vd.Condition == option]
