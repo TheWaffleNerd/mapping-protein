@@ -22,9 +22,10 @@ with st.sidebar:
         ('Please select your Type:', 'Heart Failure','Liver Dysfunction','Lung Dysfunction','Cancer','Liver Fibrosis','Kidney Dysfunction'))
 
 if category == 'Disease':
-        df_category = pd.DataFrame(
+        df_category = pd.DataFrame({
             'Conditions': ['CVA','IHD','CM','ARR','VD','CHD'],
-            'Count': final_vd.Condition.value_counts().reset_index().values, columns=["name", "count"])
+            'Count': final_vd.Condition.value_counts().reset_index().values, columns=["name", "count"]
+        })
         st.bar_chart(df_category)
 
 if category == 'Co Morbidity':
