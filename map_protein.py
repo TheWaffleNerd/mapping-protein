@@ -12,7 +12,7 @@ from streamlit_agraph.config import Config, ConfigBuilder
 
 #getting data
 
-final_vd = pd.read_csv(r'./final_top51.csv')
+final_vd = pd.read_csv(r'./final_top5.csv')
 
 #setting sidebar
 
