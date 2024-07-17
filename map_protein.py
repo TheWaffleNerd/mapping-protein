@@ -45,7 +45,7 @@ df_condition = dict(enumerate(final_arr_short.Condition.unique()))
 for k in df_condition:
   nodes.append(Node(id = df_condition[k],
                     label = df_condition[k],
-                    size = 200,
+                    size = 400,
                     shape = 'circle',
                     color = '#00FFFF')
               )
