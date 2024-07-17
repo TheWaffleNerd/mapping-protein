@@ -15,7 +15,7 @@ with st.sidebar:
     if category == 'Disease':
         option = st.selectbox(
         'Please select your Type:',
-        ('CVA','IHD','CM','ARR','VD','CHD'))
+        ('Please select your Type:', 'CVA','IHD','CM','ARR','VD','CHD'))
     elif category == 'Co Morbidity':
         option = st.selectbox(
         'Please select your Type:',
