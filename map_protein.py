@@ -52,7 +52,7 @@ for k in df_condition:
 df_connections = final_arr_short.filter(items = ['Protein', 'neighbour_name']).drop_duplicates()
 df_connections = df_connections[df_connections.neighbour_name != 'na']
 for index, row in df_connections.iterrows():
-  nodes.append(Edge(source = row['Protein'],
+  edges.append(Edge(source = row['Protein'],
                         label = '--',
                         target = row['neighbour_name'])
               )
