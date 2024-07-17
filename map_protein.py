@@ -14,6 +14,7 @@ with st.sidebar:
         type_n)
 
 if category:
+    st.title("Bar Chart for " + category)
     final_cat_short = final_vd[final_vd.node_type == category]
     st.bar_chart(pd.DataFrame(final_cat_short['Condition'].value_counts()), x_label='Disease Type', y_label='Count', color='count')
     type_c = final_cat_short['Condition'].unique()
