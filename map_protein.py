@@ -21,9 +21,15 @@ with st.sidebar:
         'Please select your Type:',
         ('Please select your Type:', 'Heart Failure','Liver Dysfunction','Lung Dysfunction','Cancer','Liver Fibrosis','Kidney Dysfunction'))
 
-    example = st.selectbox(
-        'Please select yes or no:',
-        ('Yes', 'No'))
+if category == 'Disease':
+    catergories = {'CVA','IHD','CM','ARR','VD','CHD'}
+    for i in categories:
+        final_cat_short = final_vd[final_vd.Condition == i]
+        df_category = pd.DataFrame(final_cat_short.neighbour_name.value_counts(), columns=["name", "count"])
+        st.bar_chart(df_category)
+
+if category == 'Co Morbidity':
+    df_category = {'Heart Failure','Liver Dysfunction','Lung Dysfunction','Cancer','Liver Fibrosis','Kidney Dysfunction'}
 
 if option != 'Please select your Type:':
     #getting data for KG
