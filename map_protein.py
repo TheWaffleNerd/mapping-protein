@@ -20,7 +20,7 @@ if category:
         'Please select your Type:',
         type_c)
 
-    st.write(pd.DataFrame(final_vd['Condition'].value_counts())
+    st.write(pd.DataFrame(final_vd['Condition'].value_counts()))
     st.bar_chart(count, x="Condition", y="Disease_count")
     
     #getting data for KG
