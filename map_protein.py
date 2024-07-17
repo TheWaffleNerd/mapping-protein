@@ -20,7 +20,7 @@ if category:
         'Please select your Type:',
         type_c)
 
-    st.bar_chart(pd.DataFrame(final_vd['Condition'].value_counts(), x="Condition", y="Disease_count")
+    st.bar_chart(pd.DataFrame(final_vd['Condition'].value_counts(), x="Condition", y="Disease_count"))
     
     #getting data for KG
     final_arr_short = final_vd[final_vd.Condition == option]
