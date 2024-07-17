@@ -21,6 +21,7 @@ if category:
         type_c)
 
     count = pd.DataFrame(final_vd['Condition'].value_counts(), columns=["Disease_count", "Condition"])
+    st.write(count)
     st.bar_chart(count, x="Condition", y="Disease_count")
     
     #getting data for KG
